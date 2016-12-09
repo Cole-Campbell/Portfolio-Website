@@ -1,0 +1,150 @@
+/*JS Loader CSS. As it comes first, so shall it come first*/
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../media/loading.gif) center no-repeat #fff;
+}
+
+/*Styles Pertaining to the header & Jumbotron*/
+#mainDisplay{
+	margin-bottom:0px;
+	background-color:#333333;
+	padding-top:0px;
+}
+
+.jumbotron{
+	padding-top:0px;
+	padding-bottom:0px;	
+}
+
+/*Styles for the main page gallery area and About Me section*/
+.gallery-item p{
+	padding-bottom:20px;
+}
+
+.gallery-item a:hover{
+	color:#d47163;
+}
+
+#border{
+	background-color:#ededed;
+	margin:20px;
+	padding:20px;
+}
+
+.container{
+	padding:20px 0px;
+}
+
+.container-fluid img {
+	border: 5px solid #333333;
+}
+
+.portrait{
+	margin-bottom:10px;
+}
+
+/*General Elements getting you down? Well Come on in and change them how you like!
+This area is for the basic HTML element styling*/
+
+h2{
+	color:#333;
+}
+
+h4{
+	text-align: center;
+	padding-bottom:20px;
+	line-height: 18px;
+	color:#333;
+}
+
+h4:hover{
+	color:#d47163;
+}
+
+body{
+	background:#fcfcfc;
+}
+
+p{
+	color:#333;
+	line-height: 17pt;
+}
+
+hr{
+	width:50%;
+	border-color:#333333;
+}
+
+footer{
+	margin: 0px auto;
+}
+
+footer hr{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+footer p{
+	text-align: center;
+	margin-bottom:0px;
+}
+
+/*Looking for anything dealing with links? You have come to the right place!*/
+.fa-github:hover{
+	color: #6e5494;
+}
+
+.fa-twitter:hover{
+	color: #55acee;
+}
+
+.fa-linkedin:hover{
+	color: #0077B5;
+}
+
+.fa-envelope:hover{
+	color: #d47163;
+}
+
+.fa-heart{
+	color:#d47163;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color:#d47163;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+p a:hover{
+	color:#d47163;
+}
+
+#socialMedia a{
+	text-align:center;
+	color:#333333;
+}
+
+/*Styles which change the footer can be found here...at the bottom of the documents!*/
+#socialMedia i{
+	padding:0px 10px;
+	margin-bottom:15px;
+}
