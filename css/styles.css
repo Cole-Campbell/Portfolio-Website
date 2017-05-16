@@ -113,6 +113,10 @@ footer p{
 	color: #d47163;
 }
 
+.fa-codepen:hover{
+	color: #0ebeff;
+}
+
 .fa-heart{
 	color:#d47163;
 }
@@ -147,4 +151,61 @@ p a:hover{
 #socialMedia i{
 	padding:0px 10px;
 	margin-bottom:15px;
+}
+
+/*Navigation Menu*/
+.top-nav{
+	background-color: #333;
+	overflow: hidden;
+}
+
+.top-nav a{
+	float: left;
+	display: block;
+	color: #f8f8f8;
+	text-align:center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.top-nav a:hover, .top-nav a:active{
+	background-color: #ddd;
+	color: black;
+}
+
+.top-nav .icon{
+	display: none;
+}
+
+/*Menu Media Queries*/
+@media screen and (max-width: 600px) {
+	.top-nav a:not(:empty) {display: none;}
+	.top-nav a.icon{
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+  .top-nav.responsive {position: relative;}
+  .top-nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #menu-status{
+	  width: 20px;
+	  text-align: center;
+  }
+}
+
+.top-nav i{
+	color: white;
 }

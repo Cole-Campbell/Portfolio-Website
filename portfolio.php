@@ -29,6 +29,7 @@
 		}
 
 		echo "<h2>{$name}</h2>
+			<p><a href=\"./\" alt=\"Back to Home\">&laquo Back Home</a></p>
 				<div class=\"col-md-12 col-lg-12\">";
 
 		if($type == "image"){
@@ -40,11 +41,13 @@
 				    <source src=\"{$url}.ogg\" type=\"video/ogg\" />
 				</video>";
 		} else {
-			echo "<img class=\"img-responsive img-center\" src=\"{$url}.jpg\" ";
+			echo "<a href=\"{$url}.pdf\" target=\"_blank\"><img class=\"img-responsive img-center\" src=\"{$url}.jpg\"></a> ";
 		}
 
+#Add this once all descriptions have been added to the database.<p>{$desc}</p>
+
 			echo "<div class=\"col-md-12 col-lg-8 description\">
-					<p>{$desc}</p>
+					
 				</div>
 			</div>";
 

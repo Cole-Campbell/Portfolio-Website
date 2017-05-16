@@ -13,6 +13,9 @@
 				<a href="https://ie.linkedin.com/in/colewcampbell" target="_blank">
 					<i class="fa fa-linkedin fa-2x"></i>
 				</a>
+				<a href="http://codepen.io/Cole-Campbell" target="_blank">
+					<i class="fa fa-codepen fa-2x"></i>
+				</a>
 			</p>
 		</div>
 			<p><i><i class="fa fa-code fa-lg"></i> with <i class="fa fa-heart"></i> by Cole.</i></i></p>

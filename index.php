@@ -3,10 +3,6 @@
 	include_once('header.php');
 ?>
 
-<div class="jumbotron">
-	<img src="./media/cole-full.gif" class="img-responsive" id="mainDisplay" style="background-position: cover; margin-bottom:0px;">
-</div>
-
 <div id="border">
 	<div class="container-fluid">
 			<div class="col-xs-12 col-sm-4">
@@ -41,7 +37,7 @@
 		extract($row);
 
 		echo "<div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-3 gallery-item\">
-					<a href=\"portfolio.php?id={$id}&name={$name}\">
+					<a href=\"portfolio.php?id={$id}\">
 						<img class=\"img-responsive\" src=\"{$thumb}\" onerror=\"imgError(this);\"/>
 						<h4>{$name}</h4>
 					</a>
@@ -56,5 +52,5 @@
 	include_once('footer.php');
 
 	#Adding Google Analytics code to monitor traffic which is brought to my website.  This will help with identifying where people are who are viewing my website which will only used for myself and no other external or third party companies.
-	include_once("analytics.php");
+	include_once("../analytics.php");
 ?>
