@@ -20,8 +20,7 @@
 		</div>
 			<p><i><i class="fa fa-code fa-lg"></i> with <i class="fa fa-heart"></i> by Cole.</i></i></p>
 		</footer>
-		</div>
-
+</div>
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

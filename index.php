@@ -3,7 +3,6 @@
 	include_once('header.php');
 ?>
 
-<div id="border">
 	<div class="container-fluid">
 			<div class="col-xs-12 col-sm-4">
 				<img class="img-responsive portrait" src="./media/portrait-cole.jpg">

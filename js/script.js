@@ -1,19 +1,15 @@
-function downFunction() {
-    var x = document.getElementById("main-top-nav");
-    var icon = document.getElementById("menu-status");
-    if (x.className === "top-nav") {
-        x.className += " responsive";
-        icon.className = "fa fa-times";
-    } else {
-        x.className = "top-nav";
-        icon.className = "fa fa-bars";
-    }
+function openNav() {
+    document.getElementById ("mobileNav").style.width = "100%";
+    document.getElementById ("container").style.filter = "blur(5px)";
 }
 
-$('html').click(function(){
-    //
-});
+function closeNav() {
+    document.getElementById ("mobileNav").style.width = "0%";
+    document.getElementById ("container").style.filter = "blur(0px)";
+}
 
-$('#main-top-nav').click(function(event){
-    event.stopPropagation();
-})
+window.onresize = function (){
+    if(window.innerWidth >= 600){
+        closeNav();
+    }
+}

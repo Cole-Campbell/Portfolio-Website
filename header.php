@@ -31,11 +31,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<!--Scripts which load in jQuery, Bootstrap and FontAwesome libraries-->
-	<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	
-	<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\" integrity=\"sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa\" crossorigin=\"anonymous\"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<script src=\"https://use.fontawesome.com/d016f5b83b.js\"></script>
+	<script src="https://use.fontawesome.com/d016f5b83b.js"></script>
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -45,15 +45,29 @@
 
 	<body>
 		<div class="se-pre-con"></div>
+
+		<div class="sideNav" id="mobileNav">
+			<a href="#">Portfolio</a>
+			<a href="#">About Me</a>
+			<a href="#">Contact Me</a>
+			<a href="javascript:void(0);" class="closeBtn" id="closed" onclick="closeNav()">
+					<i id="menu-status" class="fa fa-times"></i>
+			</a>
+		</div>
+
 		<div class="top-nav" id="main-top-nav">
 			<a href="#">Portfolio</a>
 			<a href="#">About Me</a>
 			<a href="#">Contact Me</a>
-			<a href="javascript:void(0);" class="icon" id="closed" onclick="downFunction()">
-				<i id="menu-status" class="fa fa-bars"></i>
-			</a>
 		</div>
 
 		<?php
 			include_once('db.php')
 		?>
+		
+		<div id="container">
+			<div class="menuBtn">
+				<a href="javascript:void(0);" class="icon" id="closed" onclick="openNav()">
+					<i id="menu-status" class="fa fa-bars"></i>
+				</a>
+			</div>
